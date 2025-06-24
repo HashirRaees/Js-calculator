@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Calculator By <br><span>Hashir Raees</span></h1>
+    </div>
+    <div class="cal">
+      <input class="screen" id="display" readonly></input>
+      <div class="buttons">
+        <div class="first-btns">
+          <button class="orange" onclick="clearAll()">AC</button>
+          <button class="orange" onclick="clearSingle()">DEL</button>
+          <button class="orange" onclick="toDisplay('/')">/</button>
+          <button class="orange" onclick="toDisplay('*')">*</button>
+        </div>
+        <div class="sec-btns">
+          <button class="grey" onclick="toDisplay('7')">7</button>
+          <button class="grey" onclick="toDisplay('8')">8</button>
+          <button class="grey" onclick="toDisplay('9')">9</button>
+          <button class="orange" onclick="toDisplay('-')">-</button>
+        </div>
+         <div class="sec-btns">
+          <button class="grey" onclick="toDisplay('6')">6</button>
+          <button class="grey" onclick="toDisplay('5')">5</button>
+          <button class="grey" onclick="toDisplay('4')">4</button>
+          <button class="orange" onclick="toDisplay('+')">+</button>
+        </div>
+        <div class="sec-btns">
+          <button class="grey" onclick="toDisplay('1')">1</button>
+          <button class="grey" onclick="toDisplay('2')">2</button>
+          <button class="grey" onclick="toDisplay('3')">3</button>
+          <button class="long-btn" onclick="calculate()">=</button>
+        </div>
+        <div class="third-btns">
+          <button class="zero" onclick="toDisplay('0')">0</button>
+          <button class="grey" onclick="toDisplay('.')">.</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
